@@ -1,0 +1,12 @@
+name: animePlus_protos
+description: protobuf protocol files for animePlus
+version: 0.0.1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  grpc: ^3.2.4
+  protobuf: ^3.1.0
+  fixnum: ^1.1.0
+  
