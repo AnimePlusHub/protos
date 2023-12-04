@@ -22,3 +22,16 @@ func main() {
 }
 
 ```
+# use protos in typescript
+```typescript
+pnpm install git+https://git@github.com/AnimePlusHub/protos.git
+```
+## Example
+```typescript
+import {User} from '@animePlus/protos/node/planetmsg/user_service_pb'
+
+var data = new User();
+data.setId(32);
+
+
+```
