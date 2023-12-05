@@ -1,0 +1,16 @@
+syntax = "proto3";
+package plantmsg;
+
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/friendService";
+
+message MsgRsp {	// 响应码
+	string msg = 1;
+}
+message GroupReq {  // 添加分组
+    string groupName = 1;
+}
+
+service FriendService {
+	// 添加分组
+    rpc AddGroup (GroupReq) returns (MsgRsp) {}
+}
