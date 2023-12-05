@@ -1,5 +1,5 @@
 syntax = "proto3";
-package plantmsg;
+package userIdl;
 
 option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/user/userService";
 
