@@ -1,7 +1,7 @@
 syntax = "proto3";
 package plantmsg;
 
-option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/userService";
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/user/userService";
 
 message User {
   int32 Id = 1;

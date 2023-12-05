@@ -3,7 +3,7 @@ package plantmsg;
 
 // import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/signUpService";
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/signUp/signUpService";
 
 message User {
   int32 Id = 1;
