@@ -3,6 +3,9 @@ name: build-protos
 on:
   push:
     branches: ["main"]
+  
+permissions:
+    contents: write
 
 jobs:
   build:
@@ -30,3 +33,16 @@ jobs:
       
       - name: Build
         run: make generate
+      
+      - name: refresh code
+        run: |
+          git config --global user.email "1050109853@qq.com"
+          git config --global user.name "kid"
+          git add .
+          git commit -m "Generate code [skip ci]"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
+
+
+      
