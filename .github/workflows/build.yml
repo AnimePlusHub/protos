@@ -39,9 +39,9 @@ jobs:
           git config --global user.email "1050109853@qq.com"
           git config --global user.name "kid"
           git add .
-          git commit -m "Generate code [skip ci]"
+          git commit --amend --no-edit
           git push origin main
-          git rebase -i HEAD~1 --autosquash
+          
         env:
           GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
 
