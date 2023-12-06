@@ -4,7 +4,7 @@
 // - protoc             (unknown)
 // source: planetmsg/signUp/sign_up_service.proto
 
-package signUpService
+package SignUpServer
 
 import (
 	context "context"

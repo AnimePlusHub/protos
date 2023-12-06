@@ -18,6 +18,10 @@ class FriendServiceClient extends $grpc.Client {
       '/friendIdl.FriendService/AddGroup',
       ($0.GroupReq value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $0.MsgRsp.fromBuffer(value));
+  static final _$searchUsers = $grpc.ClientMethod<$0.NickReq, $0.User>(
+      '/friendIdl.FriendService/SearchUsers',
+      ($0.NickReq value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $0.User.fromBuffer(value));
 
   FriendServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -27,6 +31,11 @@ class FriendServiceClient extends $grpc.Client {
   $grpc.ResponseFuture<$0.MsgRsp> addGroup($0.GroupReq request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$addGroup, request, options: options);
+  }
+
+  $grpc.ResponseFuture<$0.User> searchUsers($0.NickReq request,
+      {$grpc.CallOptions? options}) {
+    return $createUnaryCall(_$searchUsers, request, options: options);
   }
 }
 
@@ -41,6 +50,13 @@ abstract class FriendServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $0.GroupReq.fromBuffer(value),
         ($0.MsgRsp value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.NickReq, $0.User>(
+        'SearchUsers',
+        searchUsers_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.NickReq.fromBuffer(value),
+        ($0.User value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.MsgRsp> addGroup_Pre(
@@ -48,6 +64,13 @@ abstract class FriendServiceBase extends $grpc.Service {
     return addGroup(call, await request);
   }
 
+  $async.Future<$0.User> searchUsers_Pre(
+      $grpc.ServiceCall call, $async.Future<$0.NickReq> request) async {
+    return searchUsers(call, await request);
+  }
+
   $async.Future<$0.MsgRsp> addGroup(
       $grpc.ServiceCall call, $0.GroupReq request);
+  $async.Future<$0.User> searchUsers(
+      $grpc.ServiceCall call, $0.NickReq request);
 }

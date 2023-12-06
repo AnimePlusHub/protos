@@ -4,7 +4,7 @@
 // - protoc             (unknown)
 // source: planetmsg/friend/friend_service.proto
 
-package friendService
+package FriendServer
 
 import (
 	context "context"
@@ -19,7 +19,8 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	FriendService_AddGroup_FullMethodName = "/friendIdl.FriendService/AddGroup"
+	FriendService_AddGroup_FullMethodName    = "/friendIdl.FriendService/AddGroup"
+	FriendService_SearchUsers_FullMethodName = "/friendIdl.FriendService/SearchUsers"
 )
 
 // FriendServiceClient is the client API for FriendService service.
@@ -28,6 +29,8 @@ const (
 type FriendServiceClient interface {
 	// 添加分组
 	AddGroup(ctx context.Context, in *GroupReq, opts ...grpc.CallOption) (*MsgRsp, error)
+	// 按昵称查找用户
+	SearchUsers(ctx context.Context, in *NickReq, opts ...grpc.CallOption) (*User, error)
 }
 
 type friendServiceClient struct {
@@ -47,12 +50,23 @@ func (c *friendServiceClient) AddGroup(ctx context.Context, in *GroupReq, opts .
 	return out, nil
 }
 
+func (c *friendServiceClient) SearchUsers(ctx context.Context, in *NickReq, opts ...grpc.CallOption) (*User, error) {
+	out := new(User)
+	err := c.cc.Invoke(ctx, FriendService_SearchUsers_FullMethodName, in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // FriendServiceServer is the server API for FriendService service.
 // All implementations must embed UnimplementedFriendServiceServer
 // for forward compatibility
 type FriendServiceServer interface {
 	// 添加分组
 	AddGroup(context.Context, *GroupReq) (*MsgRsp, error)
+	// 按昵称查找用户
+	SearchUsers(context.Context, *NickReq) (*User, error)
 	mustEmbedUnimplementedFriendServiceServer()
 }
 
@@ -62,6 +76,9 @@ type UnimplementedFriendServiceServer struct {
 
 func (UnimplementedFriendServiceServer) AddGroup(context.Context, *GroupReq) (*MsgRsp, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method AddGroup not implemented")
+}
+func (UnimplementedFriendServiceServer) SearchUsers(context.Context, *NickReq) (*User, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method SearchUsers not implemented")
 }
 func (UnimplementedFriendServiceServer) mustEmbedUnimplementedFriendServiceServer() {}
 
@@ -94,6 +111,24 @@ func _FriendService_AddGroup_Handler(srv interface{}, ctx context.Context, dec f
 	return interceptor(ctx, in, info, handler)
 }
 
+func _FriendService_SearchUsers_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(NickReq)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(FriendServiceServer).SearchUsers(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: FriendService_SearchUsers_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(FriendServiceServer).SearchUsers(ctx, req.(*NickReq))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // FriendService_ServiceDesc is the grpc.ServiceDesc for FriendService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -104,6 +139,10 @@ var FriendService_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "AddGroup",
 			Handler:    _FriendService_AddGroup_Handler,
+		},
+		{
+			MethodName: "SearchUsers",
+			Handler:    _FriendService_SearchUsers_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

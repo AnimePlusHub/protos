@@ -4,7 +4,7 @@
 // - protoc             (unknown)
 // source: planetmsg/user/user_service.proto
 
-package userService
+package UserServer
 
 import (
 	context "context"
