@@ -3,14 +3,32 @@ package friendIdl;
 
 option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/friend/FriendServer";
 
+message User {
+    int32 Id = 1;
+    string Account = 2;
+    string NickName = 3;
+    string Pwd = 4;
+    string Email = 5;
+    string Phone = 6;
+    string PicUrl = 7;
+    int64 BirthDay = 8;
+    int64 CreateTime = 9;
+    int32 Status = 10;
+    int64 LastLoginTime = 11;
+}
 message MsgRsp {	// 响应码
 	string msg = 1;
 }
 message GroupReq {  // 添加分组
     string groupName = 1;
 }
+message NickReq {  // 用户昵称请求
+    string nickName = 1;
+}
 
 service FriendService {
 	// 添加分组
     rpc AddGroup (GroupReq) returns (MsgRsp) {}
+    // 按昵称查找用户
+    rpc SearchUsers (NickReq) returns (User) {}
 }
