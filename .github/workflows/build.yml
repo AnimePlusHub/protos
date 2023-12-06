@@ -33,6 +33,8 @@ jobs:
 
       - name: refresh code
         run: |
+          git config --global user.email "1050109853@qq.com"
+          git config --global user.name "kid"
           git add .
           git commit -m "Genrate code [skip ci]"
           git push origin main
