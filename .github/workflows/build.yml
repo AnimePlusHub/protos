@@ -42,7 +42,7 @@ jobs:
           git commit -m "Generate code [skip ci]"
           git push origin main
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
 
 
       
