@@ -1,7 +1,7 @@
 syntax = "proto3";
 package friendIdl;
 
-option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/friend/friendService";
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/friend/FriendServer";
 
 message MsgRsp {	// 响应码
 	string msg = 1;
