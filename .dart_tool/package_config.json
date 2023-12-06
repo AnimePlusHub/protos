@@ -3,135 +3,141 @@
   "packages": [
     {
       "name": "archive",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/archive-3.4.9",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/archive-3.4.9",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "args",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/args-2.4.2",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/args-2.4.2",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "async",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/async-2.11.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/async-2.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "clock",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/clock-1.1.1",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/clock-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "collection",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/collection-1.18.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "convert",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/convert-3.1.1",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/convert-3.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "crypto",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/crypto-3.0.3",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/crypto-3.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "fixnum",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/fixnum-1.1.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/fixnum-1.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "googleapis_auth",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/googleapis_auth-1.4.1",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/googleapis_auth-1.4.1",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "grpc",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/grpc-3.2.4",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/grpc-3.2.4",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "http",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/http-1.1.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/http-1.1.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "http2",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/http2-2.2.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/http2-2.2.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "http_parser",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/http_parser-4.0.2",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "js",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/js-0.6.7",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/js-0.6.7",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "meta",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/meta-1.11.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/meta-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/path-1.8.3",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "pointycastle",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/pointycastle-3.7.3",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/pointycastle-3.7.3",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
     {
       "name": "protobuf",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/protobuf-3.1.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/protobuf-3.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.19"
     },
     {
       "name": "source_span",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/source_span-1.10.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/source_span-1.10.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "string_scanner",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/string_scanner-1.2.0",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/string_scanner-1.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "term_glyph",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/term_glyph-1.2.1",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/term_glyph-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "typed_data",
-      "rootUri": "file:///home/kid/.pub-cache/hosted/pub.flutter-io.cn/typed_data-1.3.2",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/typed_data-1.3.2",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "web",
+      "rootUri": "file:///home/runner/.pub-cache/hosted/pub.dev/web-0.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "animePlus_protos",
@@ -140,7 +146,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-30T13:40:58.140567Z",
+  "generated": "2023-12-06T01:07:17.353974Z",
   "generator": "pub",
-  "generatorVersion": "3.1.3"
+  "generatorVersion": "3.2.2"
 }
