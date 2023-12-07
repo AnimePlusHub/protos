@@ -43,6 +43,16 @@ jobs:
           git push origin main
         env:
           GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
+  release-please:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v4
+        id: release-please
+        with:
+          command: manifest
+          
+
 
 
       
