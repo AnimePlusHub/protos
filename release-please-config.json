@@ -1,1 +1,28 @@
-{}
+{
+    "release-type": "node",
+    "packages": {
+        ".": {
+            "package-name": ""
+        }
+    },
+    "extra-files": [
+        {
+            "type": "json",
+            "path": "package.json",
+            "jsonpath": "$.version"
+        },
+        {
+            "type": "json",
+            "path": "package-lock.json",
+            "jsonpath": "$.version"
+        },
+        {
+            "type": "json",
+            "path": "package-lock.json",
+            "jsonpath": "$['packages']['']['version']"
+        }
+       
+    ],
+    "bump-minor-pre-major": true,
+    "bump-patch-for-minor-pre-major": true
+}
