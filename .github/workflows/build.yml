@@ -51,8 +51,8 @@ jobs:
         id: release-please
         with:
           command: manifest
-          env:
-            GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
+        env:
+          GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
 
           
           
