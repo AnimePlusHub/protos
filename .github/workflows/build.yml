@@ -51,9 +51,9 @@ jobs:
         id: release-please
         with:
           command: manifest
-        - name: Generate Release Artifact
-          env:
-            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Generate Release Artifact
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           
 
 
