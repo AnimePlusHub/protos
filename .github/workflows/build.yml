@@ -34,15 +34,10 @@ jobs:
       - name: Build
         run: make generate
       
-      - name: refresh code
-        run: |
-          git config --global user.email "1050109853@qq.com"
-          git config --global user.name "kid"
-          git add .
-          git commit -m "Generate code [skip ci]"
-          git push origin main
-        env:
-          GITHUB_TOKEN: ${{secrets.KID_GIT_TOKEN}}
+      - name: Refresh Code
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: apply auto code generation'
   release-please:
     needs: build
     runs-on: ubuntu-latest
