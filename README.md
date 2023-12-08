@@ -33,5 +33,7 @@ import {User} from '@animePlus/protos/node/planetmsg/user_service_pb'
 var data = new User();
 data.setId(32);
 
-
 ```
+
+
+##  测试protos
