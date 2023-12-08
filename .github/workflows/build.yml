@@ -6,7 +6,7 @@ on:
   
 permissions:
     contents: write
-    pull-requests: write
+    id-token: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -46,7 +46,6 @@ jobs:
         id: release-please
         with:
           command: manifest
-          token: ${{secrets.KID_GIT_TOKEN}}
           
 
 
