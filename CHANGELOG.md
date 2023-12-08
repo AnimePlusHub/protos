@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/AnimePlusHub/protos/compare/v0.0.2...v0.0.3) (2023-12-08)
+
+
+### Features
+
+* test release29 ([57600d3](https://github.com/AnimePlusHub/protos/commit/57600d3c24135d589b81321ea71a21636b49dd71))
+
 ## [0.0.2](https://github.com/AnimePlusHub/protos/compare/v0.0.1...v0.0.2) (2023-12-08)
 
 
