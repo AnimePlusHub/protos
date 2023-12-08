@@ -48,7 +48,6 @@ jobs:
         id: release-please
         with:
           command: manifest
-          token: ${{secrets.GITHUB_TOKEN}}
           
 
 
