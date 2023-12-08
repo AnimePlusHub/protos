@@ -4,12 +4,7 @@ on:
   push:
     branches: ["main"]
   
-permissions:
-    contents: write
-    pages: write
-    id-token: write
-    packages: write
-    pull-requests: write
+permissions: write-all
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -48,7 +43,6 @@ jobs:
       - uses: google-github-actions/release-please-action@v4
         id: release-please
         with:
-          token: ${{secrets.KID_GIT_TOKEN}}
           command: manifest
           
 
