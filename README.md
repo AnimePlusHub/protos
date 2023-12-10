@@ -37,3 +37,11 @@ data.setId(32);
 
 
 ##  测试protos
+# use protos in dart
+## in pubspec.yaml
+```yaml
+dependencies:
+	...
+  animePlus_protos:
+    git: https://github.com/AnimePlusHub/protos.git
+```
