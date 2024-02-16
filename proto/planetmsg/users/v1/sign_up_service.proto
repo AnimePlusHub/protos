@@ -1,9 +1,9 @@
 syntax = "proto3";
-package signUpIdl;
+package planetmsg.users.v1;
 
 // import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/signUp/SignUpServer";
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/users/v1;v1";
 
 message User {
   int32 Id = 1;

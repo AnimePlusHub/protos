@@ -1,7 +1,7 @@
 syntax = "proto3";
-package friendIdl;
+package planetmsg.users.v1;
 
-option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/friend/FriendServer";
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/users/v1;v1";
 
 message User {
     int32 Id = 1;

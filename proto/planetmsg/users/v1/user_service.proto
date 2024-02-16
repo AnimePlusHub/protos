@@ -1,7 +1,8 @@
 syntax = "proto3";
-package userIdl;
 
-option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/user/UserServer";
+package planetmsg.users.v1;
+
+option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/users/v1;v1";
 
 message User {
   int32 Id = 1;
