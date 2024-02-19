@@ -2,29 +2,12 @@ syntax = "proto3";
 package planetmsg.users.v1;
 
 // import "google/protobuf/timestamp.proto";
-
+import "planetmsg/users/v1/base.proto";
 option go_package = "github.com/AnimePlusHub/protos/pkg/planetmsg/users/v1;v1";
 
-message User {
-  int32 Id = 1;
-  string Account = 2;
-  string NickName = 3;
-  string Pwd = 4;
-  string Email = 5;
-  string Phone = 6;
-  string PicUrl = 7;
-  // google.protobuf.Timestamp BirthDay = 8;
-  // google.protobuf.Timestamp CreateTime = 9;
-  int64 BirthDay = 8;
-  int64 CreateTime = 9;
-  int32 Status = 10;
-  // google.protobuf.Timestamp LastLoginTime = 11;
-  int64 LastLoginTime = 11;
-}
 
-message MsgRsp { // 响应码
-  string msg = 1;
-}
+
+
 message EmailReq { // 邮箱请求验证码
   string email = 1;
 }
